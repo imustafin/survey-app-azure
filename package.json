@@ -43,8 +43,11 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "node-sass": "^4.5.3",
     "protractor": "~5.1.2",
+    "request": "^2.81.0",
     "selectize": "^0.12.4",
+    "shrinkwrap": "^0.4.0",
     "ui-router": "^1.0.0-alpha.3",
     "ui-select": "^0.19.8"
   },
@@ -52,5 +55,14 @@
     "node": "8.3.0",
     "npm": "5.4.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alicegaz/survey-app-azure.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Alicegaz/survey-app-azure/issues"
+  },
+  "homepage": "https://github.com/Alicegaz/survey-app-azure#readme"
 }

@@ -398,6 +398,25 @@
       "resolved": "https://registry.npmjs.org/assert-plus/-/assert-plus-0.2.0.tgz",
       "integrity": "sha1-104bh+ev/A24qttwIfP+SBAasjQ="
     },
+    "assign": {
+      "version": "0.1.7",
+      "resolved": "https://registry.npmjs.org/assign/-/assign-0.1.7.tgz",
+      "integrity": "sha1-5jv+Ooh7hjCRPCdmPkzJv/Hd0l8=",
+      "requires": {
+        "fusing": "0.4.0"
+      },
+      "dependencies": {
+        "fusing": {
+          "version": "0.4.0",
+          "resolved": "https://registry.npmjs.org/fusing/-/fusing-0.4.0.tgz",
+          "integrity": "sha1-yZBo9Uyj4R3AEYkCFSq/Nnq6Sk0=",
+          "requires": {
+            "emits": "1.0.2",
+            "predefine": "0.1.2"
+          }
+        }
+      }
+    },
     "async": {
       "version": "1.5.2",
       "resolved": "https://registry.npmjs.org/async/-/async-1.5.2.tgz",
@@ -562,6 +581,14 @@
       "version": "6.18.0",
       "resolved": "https://registry.npmjs.org/babylon/-/babylon-6.18.0.tgz",
       "integrity": "sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ=="
+    },
+    "back": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/back/-/back-1.0.2.tgz",
+      "integrity": "sha1-qT9ebOaXKZhNWQGiuxbjsBpNY2k=",
+      "requires": {
+        "xtend": "4.0.1"
+      }
     },
     "backo2": {
       "version": "1.0.2",
@@ -907,10 +934,51 @@
       "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz",
       "integrity": "sha1-EpOLz5vhlI+gBvkuDEyegXBRCMA="
     },
+    "color": {
+      "version": "0.8.0",
+      "resolved": "https://registry.npmjs.org/color/-/color-0.8.0.tgz",
+      "integrity": "sha1-iQwHw/1OZJU3Y4kRz2keVFi2/KU=",
+      "requires": {
+        "color-convert": "0.5.3",
+        "color-string": "0.3.0"
+      }
+    },
+    "color-convert": {
+      "version": "0.5.3",
+      "resolved": "https://registry.npmjs.org/color-convert/-/color-convert-0.5.3.tgz",
+      "integrity": "sha1-vbbGnOZg+t/+CwAHzER+G59ygr0="
+    },
+    "color-name": {
+      "version": "1.1.3",
+      "resolved": "https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz",
+      "integrity": "sha1-p9BVi9icQveV3UIyj3QIMcpTvCU="
+    },
+    "color-string": {
+      "version": "0.3.0",
+      "resolved": "https://registry.npmjs.org/color-string/-/color-string-0.3.0.tgz",
+      "integrity": "sha1-J9RvtnAlxcL6JZk7+/V55HhBuZE=",
+      "requires": {
+        "color-name": "1.1.3"
+      }
+    },
+    "colornames": {
+      "version": "0.0.2",
+      "resolved": "https://registry.npmjs.org/colornames/-/colornames-0.0.2.tgz",
+      "integrity": "sha1-2BH9bIT1kClJmorEQ2ICk1uSvjE="
+    },
     "colors": {
       "version": "1.0.3",
       "resolved": "https://registry.npmjs.org/colors/-/colors-1.0.3.tgz",
       "integrity": "sha1-BDP0TYCWgP3rYO0mDxsMJi6CpAs="
+    },
+    "colorspace": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/colorspace/-/colorspace-1.0.1.tgz",
+      "integrity": "sha1-yZx5btMRKLmHalLh7l7gOkpxl0k=",
+      "requires": {
+        "color": "0.8.0",
+        "text-hex": "0.0.0"
+      }
     },
     "combine-lists": {
       "version": "1.0.1",
@@ -1236,6 +1304,16 @@
       "resolved": "https://registry.npmjs.org/di/-/di-0.0.1.tgz",
       "integrity": "sha1-gGZJMmzqp8qjMG112YXqJ0i6kTw="
     },
+    "diagnostics": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/diagnostics/-/diagnostics-1.0.1.tgz",
+      "integrity": "sha1-rM2wgMgrsl0N1zQwqeaof7tDFUE=",
+      "requires": {
+        "colorspace": "1.0.1",
+        "enabled": "1.0.2",
+        "kuler": "0.0.0"
+      }
+    },
     "dom-serialize": {
       "version": "2.2.1",
       "resolved": "https://registry.npmjs.org/dom-serialize/-/dom-serialize-2.2.1.tgz",
@@ -1279,6 +1357,19 @@
       "version": "1.1.1",
       "resolved": "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz",
       "integrity": "sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0="
+    },
+    "emits": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/emits/-/emits-1.0.2.tgz",
+      "integrity": "sha1-2yDsZmgyUHHDE0QeMM/ipp6nOFk="
+    },
+    "enabled": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/enabled/-/enabled-1.0.2.tgz",
+      "integrity": "sha1-ll9lE9LC0cX0ZStkouM5ZGf8L5M=",
+      "requires": {
+        "env-variable": "0.0.3"
+      }
     },
     "encodeurl": {
       "version": "1.0.1",
@@ -1377,6 +1468,11 @@
       "version": "2.2.0",
       "resolved": "https://registry.npmjs.org/ent/-/ent-2.2.0.tgz",
       "integrity": "sha1-6WQhkyWiHQX0RGai9obtbOX13R0="
+    },
+    "env-variable": {
+      "version": "0.0.3",
+      "resolved": "https://registry.npmjs.org/env-variable/-/env-variable-0.0.3.tgz",
+      "integrity": "sha1-uGwWQb5WECZ9UG8YBx6nbXBwl8s="
     },
     "error-ex": {
       "version": "1.3.1",
@@ -1643,6 +1739,11 @@
       "resolved": "https://registry.npmjs.org/extend/-/extend-3.0.1.tgz",
       "integrity": "sha1-p1Xqe8Gt/MWjHOfnYtuq3F5jZEQ="
     },
+    "extendible": {
+      "version": "0.1.1",
+      "resolved": "https://registry.npmjs.org/extendible/-/extendible-0.1.1.tgz",
+      "integrity": "sha1-4qN+2HEp+0+VM+io11BiMKU5yQU="
+    },
     "extglob": {
       "version": "0.3.2",
       "resolved": "https://registry.npmjs.org/extglob/-/extglob-0.3.2.tgz",
@@ -1650,6 +1751,11 @@
       "requires": {
         "is-extglob": "1.0.0"
       }
+    },
+    "extract-github": {
+      "version": "0.0.5",
+      "resolved": "https://registry.npmjs.org/extract-github/-/extract-github-0.0.5.tgz",
+      "integrity": "sha1-9UJTbbjBm5g6O+yduW0u8qX/GoY="
     },
     "extsprintf": {
       "version": "1.3.0",
@@ -2660,6 +2766,14 @@
         }
       }
     },
+    "fusing": {
+      "version": "0.2.3",
+      "resolved": "https://registry.npmjs.org/fusing/-/fusing-0.2.3.tgz",
+      "integrity": "sha1-0O76+YXSuv3tRK+LGFMW9uQp4ds=",
+      "requires": {
+        "predefine": "0.1.2"
+      }
+    },
     "gauge": {
       "version": "2.7.4",
       "resolved": "https://registry.npmjs.org/gauge/-/gauge-2.7.4.tgz",
@@ -2725,6 +2839,23 @@
       "resolved": "https://registry.npmjs.org/github-from-package/-/github-from-package-0.0.0.tgz",
       "integrity": "sha1-l/tdlr/eiXMxPyDoKI75oWf6ZM4=",
       "optional": true
+    },
+    "githulk": {
+      "version": "0.0.7",
+      "resolved": "https://registry.npmjs.org/githulk/-/githulk-0.0.7.tgz",
+      "integrity": "sha1-2Wyinw7EMRfFOOUh1mNWbqhLTv8=",
+      "requires": {
+        "debug": "0.7.4",
+        "extract-github": "0.0.5",
+        "mana": "0.1.41"
+      },
+      "dependencies": {
+        "debug": {
+          "version": "0.7.4",
+          "resolved": "https://registry.npmjs.org/debug/-/debug-0.7.4.tgz",
+          "integrity": "sha1-BuHqgILCyxTjmAbiLi9vdX+Srzk="
+        }
+      }
     },
     "glob": {
       "version": "4.5.3",
@@ -3253,6 +3384,73 @@
         "vinyl-sourcemaps-apply": "0.2.1"
       },
       "dependencies": {
+        "gaze": {
+          "version": "1.1.2",
+          "resolved": "https://registry.npmjs.org/gaze/-/gaze-1.1.2.tgz",
+          "integrity": "sha1-hHIkZ3rbiHDWeSV+0ziP22HkAQU=",
+          "requires": {
+            "globule": "1.2.0"
+          }
+        },
+        "glob": {
+          "version": "7.1.2",
+          "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.2.tgz",
+          "integrity": "sha512-MJTUg1kjuLeQCJ+ccE4Vpa6kKVXkPYJ2mOCQyUuKLcLQsdrMCpBPUi8qVE6+YuaJkozeA9NusTAw3hLr8Xe5EQ==",
+          "requires": {
+            "fs.realpath": "1.0.0",
+            "inflight": "1.0.6",
+            "inherits": "2.0.3",
+            "minimatch": "3.0.4",
+            "once": "1.3.3",
+            "path-is-absolute": "1.0.1"
+          }
+        },
+        "globule": {
+          "version": "1.2.0",
+          "resolved": "https://registry.npmjs.org/globule/-/globule-1.2.0.tgz",
+          "integrity": "sha1-HcScaCLdnoovoAuiopUAboZkvQk=",
+          "requires": {
+            "glob": "7.1.2",
+            "lodash": "4.17.4",
+            "minimatch": "3.0.4"
+          }
+        },
+        "lodash": {
+          "version": "4.17.4",
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz",
+          "integrity": "sha1-eCA6TRwyiuHYbcpkYONptX9AVa4="
+        },
+        "minimatch": {
+          "version": "3.0.4",
+          "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz",
+          "integrity": "sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==",
+          "requires": {
+            "brace-expansion": "1.1.8"
+          }
+        },
+        "node-sass": {
+          "version": "3.13.1",
+          "resolved": "https://registry.npmjs.org/node-sass/-/node-sass-3.13.1.tgz",
+          "integrity": "sha1-ckD7v/I5YwS0IjUn7TAgWJwAT8I=",
+          "requires": {
+            "async-foreach": "0.1.3",
+            "chalk": "1.1.3",
+            "cross-spawn": "3.0.1",
+            "gaze": "1.1.2",
+            "get-stdin": "4.0.1",
+            "glob": "7.1.2",
+            "in-publish": "2.0.0",
+            "lodash.assign": "4.2.0",
+            "lodash.clonedeep": "4.5.0",
+            "meow": "3.7.0",
+            "mkdirp": "0.5.1",
+            "nan": "2.7.0",
+            "node-gyp": "3.6.2",
+            "npmlog": "4.1.2",
+            "request": "2.81.0",
+            "sass-graph": "2.2.4"
+          }
+        },
         "source-map": {
           "version": "0.5.7",
           "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz",
@@ -4213,6 +4411,14 @@
         "is-buffer": "1.1.5"
       }
     },
+    "kuler": {
+      "version": "0.0.0",
+      "resolved": "https://registry.npmjs.org/kuler/-/kuler-0.0.0.tgz",
+      "integrity": "sha1-tmu0a5NOVQ9Z2BiEjgq7pPf1VTw=",
+      "requires": {
+        "colornames": "0.0.2"
+      }
+    },
     "lazy-cache": {
       "version": "1.0.4",
       "resolved": "https://registry.npmjs.org/lazy-cache/-/lazy-cache-1.0.4.tgz",
@@ -4225,6 +4431,30 @@
       "integrity": "sha1-MIrMr6C8SDo4Z7S28rlQYlHRuDU=",
       "requires": {
         "invert-kv": "1.0.0"
+      }
+    },
+    "licenses": {
+      "version": "0.0.20",
+      "resolved": "https://registry.npmjs.org/licenses/-/licenses-0.0.20.tgz",
+      "integrity": "sha1-8YpXsmp46vKKhz4qN4oz6B9Z0TY=",
+      "requires": {
+        "async": "0.6.2",
+        "debug": "0.8.1",
+        "fusing": "0.2.3",
+        "githulk": "0.0.7",
+        "npm-registry": "0.1.13"
+      },
+      "dependencies": {
+        "async": {
+          "version": "0.6.2",
+          "resolved": "https://registry.npmjs.org/async/-/async-0.6.2.tgz",
+          "integrity": "sha1-Qf0DijgSwKi8GELs8IumPrA5K+8="
+        },
+        "debug": {
+          "version": "0.8.1",
+          "resolved": "https://registry.npmjs.org/debug/-/debug-0.8.1.tgz",
+          "integrity": "sha1-IP9NJvXkIstoobrLu2EDmtjBwTA="
+        }
       }
     },
     "liftoff": {
@@ -4373,6 +4603,11 @@
       "resolved": "https://registry.npmjs.org/lodash.mapvalues/-/lodash.mapvalues-4.6.0.tgz",
       "integrity": "sha1-G6+lAF3p3W9PJmaMMMo3IwzJaJw="
     },
+    "lodash.mergewith": {
+      "version": "4.6.0",
+      "resolved": "https://registry.npmjs.org/lodash.mergewith/-/lodash.mergewith-4.6.0.tgz",
+      "integrity": "sha1-FQzwoWeR9ZA7iJHqsVRgknS96lU="
+    },
     "lodash.restparam": {
       "version": "3.6.1",
       "resolved": "https://registry.npmjs.org/lodash.restparam/-/lodash.restparam-3.6.1.tgz",
@@ -4451,6 +4686,36 @@
       "version": "2.7.3",
       "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.3.tgz",
       "integrity": "sha1-bUUk6LlV+V1PW1iFHOId1y+06VI="
+    },
+    "mana": {
+      "version": "0.1.41",
+      "resolved": "https://registry.npmjs.org/mana/-/mana-0.1.41.tgz",
+      "integrity": "sha1-fLE/cyGGaGVCKWNcT8Wxfib5O30=",
+      "requires": {
+        "assign": "0.1.7",
+        "back": "1.0.2",
+        "diagnostics": "1.0.1",
+        "eventemitter3": "1.2.0",
+        "fusing": "1.0.0",
+        "millisecond": "0.1.2",
+        "request": "2.81.0"
+      },
+      "dependencies": {
+        "emits": {
+          "version": "3.0.0",
+          "resolved": "https://registry.npmjs.org/emits/-/emits-3.0.0.tgz",
+          "integrity": "sha1-MnUrupXhcHshlWI4Srm7ix/WL3A="
+        },
+        "fusing": {
+          "version": "1.0.0",
+          "resolved": "https://registry.npmjs.org/fusing/-/fusing-1.0.0.tgz",
+          "integrity": "sha1-VQwV12r5Jld4qgUezkTUAAoJjUU=",
+          "requires": {
+            "emits": "3.0.0",
+            "predefine": "0.1.2"
+          }
+        }
+      }
     },
     "map-cache": {
       "version": "0.2.2",
@@ -4555,6 +4820,11 @@
           "optional": true
         }
       }
+    },
+    "millisecond": {
+      "version": "0.1.2",
+      "resolved": "https://registry.npmjs.org/millisecond/-/millisecond-0.1.2.tgz",
+      "integrity": "sha1-bMWtOGJByrjniv+WT4cCjuyS2sU="
     },
     "mime": {
       "version": "1.4.0",
@@ -4690,9 +4960,9 @@
       }
     },
     "node-sass": {
-      "version": "3.13.1",
-      "resolved": "https://registry.npmjs.org/node-sass/-/node-sass-3.13.1.tgz",
-      "integrity": "sha1-ckD7v/I5YwS0IjUn7TAgWJwAT8I=",
+      "version": "4.5.3",
+      "resolved": "https://registry.npmjs.org/node-sass/-/node-sass-4.5.3.tgz",
+      "integrity": "sha1-0JydEXlkEjnRuX/8YjH9zsU+FWg=",
       "requires": {
         "async-foreach": "0.1.3",
         "chalk": "1.1.3",
@@ -4703,13 +4973,15 @@
         "in-publish": "2.0.0",
         "lodash.assign": "4.2.0",
         "lodash.clonedeep": "4.5.0",
+        "lodash.mergewith": "4.6.0",
         "meow": "3.7.0",
         "mkdirp": "0.5.1",
         "nan": "2.7.0",
         "node-gyp": "3.6.2",
         "npmlog": "4.1.2",
         "request": "2.81.0",
-        "sass-graph": "2.2.4"
+        "sass-graph": "2.2.4",
+        "stdout-stream": "1.4.0"
       },
       "dependencies": {
         "gaze": {
@@ -4789,6 +5061,30 @@
       "integrity": "sha1-GrKLVW4Zg2Oowab35vogE3/mrtk=",
       "requires": {
         "remove-trailing-separator": "1.1.0"
+      }
+    },
+    "npm-registry": {
+      "version": "0.1.13",
+      "resolved": "https://registry.npmjs.org/npm-registry/-/npm-registry-0.1.13.tgz",
+      "integrity": "sha1-nl2LL9/Bq1mQ1H99674jHXmp6CI=",
+      "requires": {
+        "debug": "0.8.1",
+        "extract-github": "0.0.5",
+        "licenses": "0.0.20",
+        "mana": "0.1.41",
+        "semver": "2.2.1"
+      },
+      "dependencies": {
+        "debug": {
+          "version": "0.8.1",
+          "resolved": "https://registry.npmjs.org/debug/-/debug-0.8.1.tgz",
+          "integrity": "sha1-IP9NJvXkIstoobrLu2EDmtjBwTA="
+        },
+        "semver": {
+          "version": "2.2.1",
+          "resolved": "https://registry.npmjs.org/semver/-/semver-2.2.1.tgz",
+          "integrity": "sha1-eUEYKz/8xYC/8cF5QqzfeVHA0hM="
+        }
       }
     },
     "npmlog": {
@@ -5160,6 +5456,14 @@
         "tar-fs": "1.15.3",
         "tunnel-agent": "0.6.0",
         "xtend": "4.0.1"
+      }
+    },
+    "predefine": {
+      "version": "0.1.2",
+      "resolved": "https://registry.npmjs.org/predefine/-/predefine-0.1.2.tgz",
+      "integrity": "sha1-KqkrRJa8H4VU5DpF92v75Q0z038=",
+      "requires": {
+        "extendible": "0.1.1"
       }
     },
     "preserve": {
@@ -5562,7 +5866,7 @@
         "qs": "6.4.0",
         "safe-buffer": "5.1.1",
         "stringstream": "0.0.5",
-        "tough-cookie": "2.3.2",
+        "tough-cookie": "2.3.3",
         "tunnel-agent": "0.6.0",
         "uuid": "3.1.0"
       }
@@ -5821,6 +6125,29 @@
       "resolved": "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.0.3.tgz",
       "integrity": "sha1-ZlZ+NwQ+608E2RvWWMDL77VbjgQ="
     },
+    "shrinkwrap": {
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/shrinkwrap/-/shrinkwrap-0.4.0.tgz",
+      "integrity": "sha1-kcSTGPxmWhS7ZDJN6CEBzQK8WbI=",
+      "requires": {
+        "debug": "0.8.1",
+        "eventemitter3": "0.1.6",
+        "fusing": "0.2.3",
+        "npm-registry": "0.1.13"
+      },
+      "dependencies": {
+        "debug": {
+          "version": "0.8.1",
+          "resolved": "https://registry.npmjs.org/debug/-/debug-0.8.1.tgz",
+          "integrity": "sha1-IP9NJvXkIstoobrLu2EDmtjBwTA="
+        },
+        "eventemitter3": {
+          "version": "0.1.6",
+          "resolved": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-0.1.6.tgz",
+          "integrity": "sha1-jHrES4e6q1XNUMgo3Dh3jqwFLqU="
+        }
+      }
+    },
     "sifter": {
       "version": "0.5.2",
       "resolved": "https://registry.npmjs.org/sifter/-/sifter-0.5.2.tgz",
@@ -6070,6 +6397,43 @@
       "resolved": "https://registry.npmjs.org/statuses/-/statuses-1.3.1.tgz",
       "integrity": "sha1-+vUbnrdKrvOzrPStX2Gr8ky3uT4="
     },
+    "stdout-stream": {
+      "version": "1.4.0",
+      "resolved": "https://registry.npmjs.org/stdout-stream/-/stdout-stream-1.4.0.tgz",
+      "integrity": "sha1-osfIWH5U2UJ+qe2zrD8s1SLfN4s=",
+      "requires": {
+        "readable-stream": "2.3.3"
+      },
+      "dependencies": {
+        "isarray": {
+          "version": "1.0.0",
+          "resolved": "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz",
+          "integrity": "sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE="
+        },
+        "readable-stream": {
+          "version": "2.3.3",
+          "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.3.tgz",
+          "integrity": "sha512-m+qzzcn7KUxEmd1gMbchF+Y2eIUbieUaxkWtptyHywrX0rE8QEYqPC07Vuy4Wm32/xE16NcdBctb8S0Xe/5IeQ==",
+          "requires": {
+            "core-util-is": "1.0.2",
+            "inherits": "2.0.3",
+            "isarray": "1.0.0",
+            "process-nextick-args": "1.0.7",
+            "safe-buffer": "5.1.1",
+            "string_decoder": "1.0.3",
+            "util-deprecate": "1.0.2"
+          }
+        },
+        "string_decoder": {
+          "version": "1.0.3",
+          "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-1.0.3.tgz",
+          "integrity": "sha512-4AH6Z5fzNNBcH+6XDMfA/BTt87skxqJlO0lAh3Dker5zThcAxG6mKz+iGu308UKoPPQ8Dcqx/4JhujzltRa+hQ==",
+          "requires": {
+            "safe-buffer": "5.1.1"
+          }
+        }
+      }
+    },
     "stream-consume": {
       "version": "0.1.0",
       "resolved": "https://registry.npmjs.org/stream-consume/-/stream-consume-0.1.0.tgz",
@@ -6220,6 +6584,11 @@
         }
       }
     },
+    "text-hex": {
+      "version": "0.0.0",
+      "resolved": "https://registry.npmjs.org/text-hex/-/text-hex-0.0.0.tgz",
+      "integrity": "sha1-V4+8haapJjbkLdF7QdAhjM6esrM="
+    },
     "through2": {
       "version": "2.0.3",
       "resolved": "https://registry.npmjs.org/through2/-/through2-2.0.3.tgz",
@@ -6290,9 +6659,9 @@
       "integrity": "sha1-uDVx+k2MJbguIxsG46MFXeTKGkc="
     },
     "tough-cookie": {
-      "version": "2.3.2",
-      "resolved": "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.3.2.tgz",
-      "integrity": "sha1-8IH3bkyFcg5sN6X6ztc3FQ2EByo=",
+      "version": "2.3.3",
+      "resolved": "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.3.3.tgz",
+      "integrity": "sha1-C2GKVWW23qkL80JdBNVe3EdadWE=",
       "requires": {
         "punycode": "1.4.1"
       }
