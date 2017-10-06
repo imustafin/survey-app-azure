@@ -52,7 +52,7 @@
     "ui-select": "^0.19.8"
   },
   "engines": {
-    "node": "8.3.0",
+    "node": "8.1.4",
     "npm": "5.4.0"
   },
   "devDependencies": {},
