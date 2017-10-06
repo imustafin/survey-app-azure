@@ -1,4 +1,4 @@
-/*const express = require('express');
+const express = require('express');
 
 const publicweb = process.env.PUBLICWEB || './dist/publicweb';
 const app = express();
@@ -10,8 +10,8 @@ app.get('*', (req, res) => {
 });
 
 const port = process.env.SERVER_PORT || '3000';
-app.listen(port, () => console.log(`API running on localhost:${port}`));*/
-var http = require('http');
+app.listen(port, () => console.log(`API running on localhost:${port}`));
+/*var http = require('http');
 
 var server = http.createServer(function(request, response) {
 
@@ -23,4 +23,4 @@ var server = http.createServer(function(request, response) {
 var port = process.env.PORT || 1337;
 server.listen(port);
 
-console.log("Server running at http://localhost:%d", port);
+console.log("Server running at http://localhost:%d", port);*/
