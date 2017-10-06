@@ -6,7 +6,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
-    "preinstall": "npm install grunt-contrib-uglify",
+    "preinstall": "nvm install 0.12.1",
     "prestart": "npm install",
     "postinstall": "grunt uglify"
   },
