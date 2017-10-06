@@ -5,7 +5,7 @@
   "description": "An introduction to angular js",
   "main": "app.js",
   "scripts": {
-    "start": "http-server",
+    "start": "node server.js",
     "preinstall": "npm install grunt-contrib-uglify",
     "prestart": "npm install",
     "postinstall": "grunt uglify"
