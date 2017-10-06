@@ -1,0 +1,42 @@
+        <figure class="page-head-image">
+          <!--img src="http://loremflickr.com/300/300/person" /-->
+          <img src="css/assets/image582.png" style="width: 300px;"/>
+        </figure>
+        
+        <h1>Work with us</h1>
+        <p>This survey uncovers the scientific summary of your work personality and lets us to know more about you work experience.</p>
+        <p><strong>Send your personal info to:</strong> <a href="">work@gmail.com</a></p>
+      
+          <form id="form-work" class="" role="form" name="form" ng-submit="vm.save()">
+              <fieldset>
+                <div class="form-group" ng-repeat="ancet in vm.response">
+                <div class="col-md-6">
+                    <label class="control-label" for="name" ng-class="{ 'has-error': form.{{'q'+ ancet.number}}.$invalid && !form.{{'q'+ ancet.number}}.$pristine}">{{ancet.text}}</label>                                    
+                    <div ng-if="ancet.kind=='input'">
+                        <input name="{{'q'+ ancet.number}}" ng-model="vm.survey[ancet.number.toString()]" class="form-control" placeholder="Kelly" type="text" required/>
+                        
+                    </div>
+                    <div ng-if="ancet.kind=='multi'">
+                        <ui-select multiple ng-model="vm.survey[ancet.number.toString()]" on-remove="vm.removed($item, $model)" name="{{'q'+ ancet.number}}" theme="bootstrap" ng-disabled="vm.disabled" close-on-select="false" title="Choose a person" required>
+                            <ui-select-match placeholder="Select language...">{{$item.text}}&gt;</ui-select-match>
+                            <ui-select-choices repeat="answer.text as answer in ancet.answers | propsFilter: {text: $select.search}">
+                              <div ng-bind-html="answer.text | highlight: $select.search"></div>
+                            </ui-select-choices>
+                        </ui-select>        
+                    </div>
+                    <div ng-if="ancet.kind=='single'">
+                        <select name="{{'q' + ancet.number}}" class="form-control" ng-model="vm.survey[ancet.number.toString()]" ng-options="item.text for item in ancet.answers" required></select>                  
+                    </div>
+                    <div ng-show="form.{{'q'+ ancet.number}}.$invalid && !form.{{'q'+ ancet.number}}.$pristine" class="help-block">
+                        {{ancet.message}}
+                    </div>
+                    <span ng-show="form.{{'q'+ ancet.number}}.$dirty && form.{{'q'+ ancet.number}}.$error.required" class="help-block">Field is required</span>                    
+                </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                      <button type="submit" class="btn btn-primary btn-lg btn-block info" ng-disabled="form.$error.required || (form.$invalid && !form.$pristine)">Send</button>
+                    </div>
+                  </div>    
+                </fieldset>  
+          </form>

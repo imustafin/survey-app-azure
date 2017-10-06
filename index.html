@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Introduction To Angular JS</title>
+  <meta name="description" content="A concise introduction and overview to Angular JS with some demos of data binding between the controller and the DOM.">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!--link rel="stylesheet" href="lib/angular-ui-select/dist/select.css"-->
+  <link rel="stylesheet" href="../node_modules/ui-select/dist/select.min.css"></script>
+  <!--link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css"-->
+  <!--link rel="stylesheet" href="lib/lib/selectize/dist/css/selectize.default.css"-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css"-->
+  <!--link rel="stylesheet" href="css/select2.css"-->    
+</head>
+<body ng-app="app" ng-cloak>
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+  <div class="navbar-header">
+  <a class="navbar-brand" ui-sref="survey">Logo</a>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+  <!--ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+  </ul-->
+  <ul class="nav navbar-nav navbar-right" ng-controller="IndexController">
+    <li ng-if="!t"><a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span> Login </a> </li>
+    <li ng-if="t"><a ui-sref="login"><span class="glyphicon glyphicon-dashboard"></span> logout </a> </li>
+    <li ng-if="t"><a ui-sref="admin"><span class="glyphicon glyphicon-dashboard"></span> DashBoard </a> </li>
+  </ul>
+  </div>
+</div>
+</nav>
+<!--header class="o-header">
+  <nav class="o-header-nav">
+    <a href="http://callmenick.com/_development/slack-logo/" class="o-header-nav__link"><i class="fa fa-arrow-left"></i> Previous Demo</a>
+    <a href="http://callmenick.com/post/introduction-to-angular-js" class="o-header-nav__link">Back To Article <i class="fa fa-star"></i></a>
+  </nav>
+  <div class="o-container">
+    <h1 class="o-header__title">Introduction To Angular JS</h1>
+  </div>
+</header-->
+
+<div class="container-fluid text-center">
+<div class="row content">
+    <div class="col-sm-1 sidenav">
+    </div>
+    <div class="col-sm-10 text-left">
+      <div ui-view></div>
+    </div>
+    <div class="col-sm-1 sidenav">
+    </div>
+</div>
+</div>
+
+<footer class="container-fluid text-center">
+    <p></p>
+    <p></p>
+  </footer>
+
+<!--script src="lib/jquery.min.js"></script-->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script-->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--script src="https://code.angularjs.org/1.6.0/angular.min.js"></script-->
+<script src="../node_modules/angular/angular.js"></script>
+<!--script src="https://code.angularjs.org/1.6.0/angular-route.min.js"></script-->
+<script src="../node_modules/angular-route/angular-route.js"></script>
+<!--script src="https://code.angularjs.org/1.6.0/angular-cookies.min.js"></script-->
+<script src="../node_modules/angular-cookies/angular-cookies.js"></script>
+<!--script src="lib/angular-animate.min.js"></script-->
+<!--script src="https://code.angularjs.org/1.6.0/angular-aria.min.js"></script-->
+<script src="../node_modules/angular-aria/angular-aria.js"></script>
+<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.min.js"></script>
+<!--script src="lib/angular-ui-router.js"></script-->
+<script src="https://unpkg.com/angular-ui-router@1.0.3/release/angular-ui-router.min.js"></script>
+<!--script src="lib/bootstrap-select.min.js"></script-->
+<!--script src="https://code.angularjs.org/1.6.0/angular-sanitize.min.js"></script-->
+<script src="../node_modules/angular-sanitize/angular-sanitize.js"></script>
+<!--script src="lib/bootstrap-select.min.js"></script-->
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="../node_modules/ui-select/dist/select.min.js"></script>  
+<script src="app.js"></script>
+<script scr="services/authentication.service.js"></script>
+<script src="services/flash.service.js"></script>
+<script src="services/user.service.js"></script>
+<script src="services/local-storage.service.js"></script>
+<script src="services/authentication.service.js"></script>
+<script src="services/api.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/survey.js"></script>
+<script src="js/index.js"></script>
+<script src="js/login.js"></script>
+<script src="js/response.js"></script>
+
+
+<!--script src="lib/select.js"></script-->
+<!--script src="js/some.js"></script-->
+
+</body>
+</html>
