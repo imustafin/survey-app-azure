@@ -6,7 +6,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
-    "preinstall": "nvm install 0.12.1",
+    "preinstall": "npm install grunt-contrib-uglify",
     "prestart": "npm install",
     "postinstall": "grunt uglify"
   },
@@ -53,7 +53,7 @@
   },
   "engines": {
     "node": "8.0.0",
-    "npm": "5.4.0"
+    "npm": "5.3.0"
   },
   "devDependencies": {},
   "repository": {
